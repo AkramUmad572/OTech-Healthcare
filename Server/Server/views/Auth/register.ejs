@@ -1,0 +1,45 @@
+<%- include ../Partials/header.ejs%>
+<%- include ../Partials/main_nav.ejs%>
+<main class="container">
+    <!--Message Area-->
+    <% if(message.length > 0 ){ %>
+        <div class="'alert alert-danger">
+            <%= message %>
+        </div>
+    <% } %>
+    <div class="row">
+      <div class="offset-md-4 col-md-4">
+        <h1>Please Register</h1>
+        <form method="post" autocomplete="off">
+          <!--username,display-->
+          <fieldset class="form-group">
+            <label for="username"></label>
+            <input type="username" class="form-control" name="username"
+            placeholder="Enter the username:" id="username" required>
+          </fieldset>
+
+          <fieldset class="form-group">
+              <label for="password"></label>
+              <input type="password" class="form-control" name="password"
+              placeholder="Enter the password:" id="password" required>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="email"></label>
+            <input type="text" class="form-control" name="email"
+            placeholder="Enter the email:" id="email" required>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="displayName"></label>
+          <input type="text" class="form-control" name="displayName"
+          placeholder="Enter the displayName:" id="displayName" required>
+        </fieldset>
+        <fieldset class="form-group text-right">
+            <input type="submit" class="btn btn-success" value="Register">
+            <a href="/">
+              <input type="button" class="btn btn-warning" value="Cancel">
+            </a>
+        </fieldset>
+      </div>
+    </div>
+</main>
+<%- include ../Partials/footer.ejs%>

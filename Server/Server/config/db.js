@@ -1,0 +1,1 @@
+module.exports={"URI":"mongodb+srv://afrozakram:C1R9IdgxT3x1q73g@cluster0.1nl2s.mongodb.net/hospitalbookings"}
